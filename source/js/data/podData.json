@@ -1,0 +1,10 @@
+{
+  "about": {
+    "title": "All about this site",
+    "description": "This is a middleman test site. It uses HAML and CoffeScript."
+  },
+  "contact": {
+    "Title": "Call Me Maybe",
+    "description": "You can contact me for assistance."
+  }
+}
