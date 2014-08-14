@@ -17,3 +17,18 @@ and then running
 
 to create a new HTML5 Boilerplate project. This gives you a nice directory tree all set up for static site development.
 
+
+CoffeeScript
+------------
+
+
+Haml
+----
+
+
+SCSS
+----
+
+
+JavaScript Templates
+--------------------

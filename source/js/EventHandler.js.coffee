@@ -23,12 +23,20 @@ class EventHandler
 
 
   ##############################################################################
+  # Clear the given element
+  ##############################################################################
+  clearEl: (clearEl) ->
+    $(clearEl).empty()
+
+
+  ##############################################################################
   # Process a nav link click
   ##############################################################################
   _processNav: (type, value) ->
     switch type
       when 'link' then window.location = value
       when 'pod' then @showPod value
+      when 'clear' then@clearEl value
 
 
 window.EventHandler = new EventHandler()
