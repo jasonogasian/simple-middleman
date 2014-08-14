@@ -1,5 +1,5 @@
-Middleman Test Project
-======================
+Middleman Sample Project
+========================
 
 This project is a simple middleman implementation using haml/scss/coffeescript. It also uses some cool attempts at event handler binding, class instantiation, and templating.
 
