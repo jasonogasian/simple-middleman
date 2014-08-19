@@ -1,26 +1,41 @@
-$greyBg: #333;
+/*******************************************************************************
+ * Variables
+ ******************************************************************************/
+$backgroundBlue: #579;
+$lightBackgroundBlue: lighten($backgroundBlue, 40%);
 $lightGrey: #E6E6E6;
 
+
+/*******************************************************************************
+ * Default Styling
+ ******************************************************************************/
 * {
   margin: 0;
   padding: 0;
+  -webkit-padding-start: 0px;
+  -webkit-padding-before: 0px;
+  -webkit-padding-after: 0px;
 }
 
 #navigation {
-  background: $greyBg;
-  color: $lightGrey;
+  background: $backgroundBlue;
+  color: #FFF;
   width: 100%;
 
   ul {
     list-style-type: none;
-    width: 100%;
     margin: 0;
     padding: 0;
+
+    &.hide-mobile {
+      display: block;
+    }
   }
 
   li {
     display: inline-block;
-    width: 19.5%;
+    width: 15%;
+    min-width: 100px;
     height: 30px;
     line-height: 30px;
     text-align: center;
@@ -28,7 +43,40 @@ $lightGrey: #E6E6E6;
   }
 
   li:hover {
-    background: $lightGrey;
-    color: $greyBg;
+    background: #FFF;
+    color: $backgroundBlue;
   }
+}
+
+// Defines a pod
+#pods-wrapper > div {
+  padding: 15px;
+  border: 1px solid #444;
+  margin: 10px;
+}
+
+#pods-wrapper > div:nth-child(even) {
+  background: $lightBackgroundBlue;
+}
+
+#footer {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: $lightGrey;
+  border-top: 1px solid $backgroundBlue;
+
+  > div {
+  padding: 20px;
+  text-align: center;
+  }
+}
+
+
+/*******************************************************************************
+ * Media Queries
+ ******************************************************************************/
+@media (max-width: 550px) {
+  @import "partials/mobile"
 }

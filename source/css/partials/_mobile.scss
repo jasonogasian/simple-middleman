@@ -1,0 +1,36 @@
+#navigation {
+
+  ul {
+    width: 100%;
+    position: absolute;
+    background: $backgroundBlue;
+
+    &.hide-mobile {
+      display: none;
+    }
+
+    li {
+      display: block;
+      width: 100%;
+      padding: 5px 0 5px 0;
+    }
+
+    li:not(:first-child) {
+      border-top: 1px solid $lightBackgroundBlue;
+    }
+  }
+}
+
+#navigation::before {
+  display: block;
+  height: 30px;
+  width: 32px;
+  cursor: pointer;
+  content: "";
+  background: $backgroundBlue url("/img/menu.png") no-repeat;
+  background-size: 30px;
+}
+
+#navigation.active {
+  background-color: $lightGrey;
+}
