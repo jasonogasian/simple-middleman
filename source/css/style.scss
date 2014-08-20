@@ -28,18 +28,17 @@ $lightGrey: #E6E6E6;
     padding: 0;
 
     &.hide-mobile {
-      display: block;
+      display: flex;
     }
   }
 
   li {
-    display: inline-block;
-    width: 15%;
     min-width: 100px;
     height: 30px;
     line-height: 30px;
     text-align: center;
     cursor: pointer;
+    flex-grow: 1;
   }
 
   li:hover {
